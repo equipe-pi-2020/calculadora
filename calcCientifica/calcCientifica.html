@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../public/logo-princ.svg" type="image/svg" />
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora Científica</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!--Importando Icon Github-->
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+        <!-- Importando icone do backspace -->
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+   
+    </head>
+    
+    <body>
+        <!-- estrutura load-page -->
+        <div class="load-page">
+            <div class="load-img">
+                <img src="../public/load.svg" alt="Imagem de carregamento">
+            </div>
+        </div>
+        <!-- fim da estrutura load-page -->
+
+        <nav id="menu-mobile">
+            <header class="menu-header">
+                <span class="close-button" onclick="fechar()">&#10005;</span>
+            </header>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./calcCientifica.html">Calculadora Científica</a>
+                    </li>
+                    <li>
+                        <a href="../calcConversor/calcConversor.html">Conversor</a>
+                    </li>
+                    <li>
+                        <a href="../calcFreelancer/calcFreelancer.html"Calculadora Freelance>Calculadora Freelance</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <!-- <img src="../public/logo-princ.svg" class="logo" alt="logo do Squad, contendo três engrenagens nas cores branca,laranja e preto, sendo contornadas por fórmulas matemáticas">          -->
+            <nav class="menu-desktop">
+                <ul class="full-menu">            
+                    <li> <a href="../index.html"> Home </a> </li>
+                    <li> <a href="./calcCientifica.html"> Calculadora Científica </a> </li>
+                    <li> <a href="../calcConversor/calcConversor.html"> Conversor </a> </li>
+                    <li> <a href="../calcFreelancer/calcFreelancer.html"> Calculadora Freelance </a> </li>
+                </ul>
+            </nav>
+            <img id="menu-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Hamburger_icon_white.svg" onclick="abre()">
+        </header>
+        <main>
+            <div class="container">
+                <div id="titulo">
+                    <h1>CALCULADORA CIENTÍFICA</h1>
+                </div>
+
+                <table class="calculadora">
+                    <tbody>
+                        <tr>
+                            <td colspan="6">
+                                <input id="tela" value="0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="sin" onclick="seno()">
+                            </td>
+                            <td>
+                                <input type="button" value="x²" onclick="quadrado()">
+                            </td>
+                            <td>
+                                <input type="button" value="1/x" onclick="inverso()">
+                            </td>
+                            <td>
+                                <input type="button" value="mod" onclick="adicionarNaTela(document.getElementById('tela'),'mod')">
+                            </td>
+                            <td>
+                                <input type="button" value="C" onclick="document.getElementById('tela').value='0'">
+                            </td>
+                            <td>
+                                <button class="btn-extra" id="backspace" type="button" value="" onclick="deletar()"><span class="iconify" data-inline="false" data-icon="akar-icons:backspace"></span></button> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="cos" onclick="cosseno()">
+                            </td>
+                            <td>
+                                <input type="button" value="&#8730;" onclick="raiz()">
+                            </td>
+                            <td>
+                                <input type="button" value="(" onclick="adicionarNaTela(document.getElementById('tela'),'(')">
+                            </td>
+                            <td>
+                                <input type="button" value=")" onclick="adicionarNaTela(document.getElementById('tela'),')')">
+                            </td>
+                            <td>
+                                <input type="button" value="n!" onclick="adicionarNaTela(document.getElementById('tela'),'!')">
+                            </td>
+                            <td>
+                                <input type="button" value="+" onclick="adicionarNaTela(document.getElementById('tela'),'+')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="tan" onclick="tangente()">
+                            </td>
+                            <td>
+                                <input type="button" value="xʸ" onclick="adicionarNaTela(document.getElementById('tela'),'^')">
+                            </td>
+                            <td>                              
+                                <input class="number" type="button" value="7" onclick="adicionarNaTela(document.getElementById('tela'),'7')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="8" onclick="adicionarNaTela(document.getElementById('tela'),'8')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="9" onclick="adicionarNaTela(document.getElementById('tela'),'9')">
+                            </td>
+                            <td>
+                                <input type="button" value="-" onclick="adicionarNaTela(document.getElementById('tela'),'-')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="sec" onclick="secante()">
+                            </td>
+                            <td>
+                                <input type="button" value="%" onclick="adicionarNaTela(document.getElementById('tela'),'%')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="4" onclick="adicionarNaTela(document.getElementById('tela'),'4')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="5" onclick="adicionarNaTela(document.getElementById('tela'),'5')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="6" onclick="adicionarNaTela(document.getElementById('tela'),'6')">
+                            </td>
+                            <td>
+                                <input type="button" value="x" onclick="adicionarNaTela(document.getElementById('tela'),'*')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="csc" onclick="cossecante()">
+                            </td>
+                            <td>
+                                <input type="button" value="log" onclick="log10()">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="1" onclick="adicionarNaTela(document.getElementById('tela'),'1')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="2" onclick="adicionarNaTela(document.getElementById('tela'),'2')">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="3" onclick="adicionarNaTela(document.getElementById('tela'),'3')">
+                            </td>
+                            <td>
+                                <input type="button" value="/" onclick="adicionarNaTela(document.getElementById('tela'),'/')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="cot" onclick="cotangente()">
+                            </td>
+                            <td>
+                                <input type="button" value="&#960" onclick="adicionarNaTela(document.getElementById('tela'),3.1415926535897932384626433832795) ">
+                            </td>
+                            <td>
+                                <input type="button" value="+/-" onclick="mudarSinal()">
+                            </td>
+                            <td>
+                                <input class="number" type="button" value="0" onclick="adicionarNaTela(document.getElementById('tela'),0)">
+                            </td>
+                            <td>
+                                <input type="button" value="." onclick="adicionarNaTela(document.getElementById('tela'),'.')">
+                            </td>
+                            <td>
+                                <input type="button" value="=" onclick="mostrarResultado()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+
+       <div class="p-footer">
+            <p>Projeto Integrador 4º Período</p>
+        </div>
+            
+            <div class="icone">
+                <a href="https://github.com/equipe-pi-2020/calculadora"><span class="iconify" data-icon="akar-icons:github-fill" style="font-size: 40px; color: #F25602;"></span></a>
+            </div>
+    
+        </footer>
+            
+            </div>        
+            <script src="app.js"></script>
+        </body>
+</html>

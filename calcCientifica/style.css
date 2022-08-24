@@ -1,0 +1,382 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Div de carregamento */
+
+.load-page {
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-page img {
+  position: absolute;
+  width: 120px;
+  left: 45%;
+  top: 35%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  animation: loading 6s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+} 
+
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+    font-family: 'Advent Pro';
+    background-color: #F25602;
+  }
+
+  /* colors {
+    laranja: #FD5B03;
+    dark-orange: #F25602 ;
+    green: #36B336;
+  }  */
+
+/* Header */
+
+  .logo {
+    width: 6rem;
+    margin-left: 3rem; 
+  }
+  
+  header {
+    margin: 1.75rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-icon{
+    width: 0;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  #menu-mobile{
+    transition: right .3s ease-in-out;
+    position: fixed;
+    right: -100vw;
+    top: 2px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+
+  #menu-mobile ul {
+    list-style: none;
+    margin: 10vh 0;
+  }
+
+  #menu-mobile a {
+    margin: 1rem 0 8rem;
+    display: flex;
+    justify-content: center;
+    color: #FD5B03;
+    font-family: 'Cabin', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;  
+  }
+
+  .close-button {
+    color: white;
+    font-size: 4.5rem;
+    margin-left: auto;
+    margin-right: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  .menu-header {
+    display: flex;
+    margin: 0.5rem;
+  }
+
+  .menu-desktop {
+    letter-spacing: 5px; 
+    font-weight: 400;
+    text-align: center;
+    width: -webkit-fill-available;
+  }
+
+  .full-menu {
+    list-style: none;
+    display: inline-flex;
+  }
+
+  a {
+    display: flex;
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;   
+    margin: 0.5rem 2rem;
+  }
+
+/* Main */
+
+  .container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;    
+  }
+ 
+  #titulo{
+    text-align: right;
+    margin-right: 3rem;  
+
+    display: flex;
+    align-items: center;
+    max-width: 573px;    
+  }
+
+  h1 {
+    font-size:6rem;
+    font-weight:bold;
+  }
+   
+  .calculadora {
+    width: 28.5rem;
+    height:34rem;
+    
+    margin: 0 0 3rem 3rem; 
+    border-spacing: 0;    
+    background-color:#c4c4c4;
+    box-shadow: 8px 5px 5px #9b3600
+  }
+  
+  td{
+    padding:0px; 
+    border-width:0px; 
+    margin:0px; 
+     
+  }
+
+  td input{
+    width: 4.75rem;
+    height: 4rem;
+
+    background-color: #FD5B03;
+    color: #ffffff;       
+   
+    /* border-color: #9b3600;
+    border-style: solid;  para uma borda e separação*/
+    
+    border: 1px solid #111111;
+    font-family: 'Cabin';
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  td input:hover {
+    background-color: rgb(253 91 3 / 90%);
+    border: none;
+  }
+
+  .number {
+    background-color: #111111;
+    border-color: #FD5B03;
+  }
+
+  .number:hover {
+    background-color: rgb(17 17 17 / 80%);
+    border: none;
+  }
+  
+  input#tela {
+    width: 28.5rem; /*para o caso de separação das teclas 24.7rem*/
+    height: 10rem; 
+
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border-color: #111111;
+    text-align: right;   
+
+    background-color: #111111;
+    color:#ffffff;
+    font-size: 2.5rem;
+    opacity: 80%;
+    cursor: auto;
+  }
+
+  .btn-extra{
+    background-color: #FD5B03;
+    border-color: #111111;
+    border: 1px;
+    border-style: solid; 
+    width: 4.75rem;
+    height: 4rem;
+  }
+
+  .iconify{
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+
+/* Footer */
+
+  footer {
+    position: relative;
+    bottom: 0;
+    height: 12%;
+    width: 100%;
+    background-color: #000;
+  }
+  
+  .p-footer {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Cabin', sans-serif;;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  footer .icone {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .logo {
+      margin-left: 5vw;
+      width: 15vw;
+    }
+
+    .load-page img{
+      display: none;
+    }
+
+    #menu-icon{
+      width: 10vw;
+    }
+
+    .menu-desktop {
+      display: none;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    #titulo {
+      text-align: center;
+      margin: 0 auto;
+      max-width: fit-content;
+    }
+
+    h1 {
+      font-size: 12vw;
+      margin: 0 0 2rem;
+    }
+
+    .calculadora {
+      margin: 0 auto;
+      width: 90vw;
+      height: 107vw;
+    }
+
+    table, tr, td, input{
+      display: flex;
+    }
+
+    tbody, td{
+      width: -webkit-fill-available;
+    }
+
+    input#tela {
+      width: -webkit-fill-available;
+      height: calc(107vw * 0.29);
+    }
+
+    input[type="button"] {
+      width: -webkit-fill-available;
+      height: calc(107vw * 0.119);
+      font-size: 5vw;
+      display: inline;
+    }
+
+    #backspace{
+      width: -webkit-fill-available;
+      height: calc(107vw * 0.119);
+    }
+    
+    .iconify{
+      font-size: 5vw;
+    }
+
+    footer {
+      min-width: 100vw;
+      bottom: -2%;
+    }
+
+    .p-footer {
+      font-size: 0.7rem;
+    }    
+
+    footer .icone {
+      right: 4px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #menu-mobile a {
+      margin: 1rem 0 2rem;
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+    }
+  
+    .close-button {
+      font-size: 2rem;
+    }
+
+    main {
+      height: -webkit-fill-available;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+    footer {
+      height: 8%;
+      top: 80px;
+    }
+
+    .p-footer {
+      font-size: 0.6rem;
+    }
+    
+    footer .icone {
+      left: 12rem;
+    }
+  }

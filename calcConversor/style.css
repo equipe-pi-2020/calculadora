@@ -1,0 +1,449 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Div de carregamento */
+
+.load-page {
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-page img {
+  position: absolute;
+  width: 120px;
+  left: 45%;
+  top: 35%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  animation: loading 6s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+/* colors {
+    laranja: #FD5B03;
+    dark-orange: #F25602 ;
+    green: #36B336;
+  }  */
+
+body {        
+    background-color: #F25602;    
+} 
+
+header {  
+    margin: 1.75rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.menu-desktop{    
+  letter-spacing: 5px; 
+  text-align: center;
+  font-weight: 400;
+  width: -webkit-fill-available;
+}
+
+.full-menu {   
+  display: inline-flex;
+}
+
+a {
+  display: flex;
+  margin: 0.5rem 2rem;
+
+  color: #ffffff;
+  text-align: center; 
+
+  font-size: 1.7rem;  
+  font-family: 'Advent Pro', sans-serif; 
+}
+
+img {
+    width: 6rem;   
+    margin-left: 3rem; 
+} 
+
+
+/* ----------------menu mobile---------------- */
+#menu-icon{
+  width: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+#menu-mobile{
+  transition: right .3s ease-in-out;
+  position: fixed;
+  right: -100vw;
+  top: 2px;
+  z-index: 1;
+  height: 100%;
+  width: 100%; 
+  background-color: black; 
+}
+#menu-mobile a {
+  margin: 1rem 0 8rem;
+  display: flex;
+  justify-content: center;
+  color: #FD5B03;
+  font-family: 'Cabin', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;   
+}
+
+.close-button {
+  color: white;
+  font-size: 4.5rem;
+  margin-left: auto;
+  margin-right: 1.4rem;
+  margin-top: 1rem;
+}
+
+.menu-header {
+  display: flex;
+  margin: 0.5rem;
+}
+ul{
+  margin-block-start: 0;
+}
+/* corpo da página */
+  
+.container {
+    position: relative;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    padding: 20px;  
+    display: flex;
+    align-items: center;   
+    justify-content: space-around; 
+  } 
+
+h1 { 
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: 'Advent Pro', sans-serif;     
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    margin-block: 0rem;
+    margin: 5rem ;    
+}
+
+#page-title{
+  text-align: right;
+  /* margin: 5rem;   */
+
+  display: flex;
+  align-items: center;
+  max-width: 573px;  
+}
+
+
+/* corpo do conversor */
+.corpoConversor{
+  height: 33rem;
+  width: 20rem;
+
+  font-family:'Cabin',monospace;
+  background-color: #C4C4C4;
+
+  margin: 5rem 3rem;
+  margin-block: 0rem;
+  margin: 5rem ;
+  margin-right: 7rem;
+  box-shadow: 8px 5px 5px #9b3600;
+}
+
+#fundoTela{
+  height: 14rem;
+  width: 20rem;  
+  
+  opacity: 80%;  
+  background-color: #111111;  
+}
+
+.telas{
+  /* background-color:aqua; */
+  height: 3rem;
+  width: 20rem;
+  
+  background-color: #111111;
+  border: none;
+  padding: 1rem;
+
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: right;
+  font-family:'Cabin',monospace;  
+}
+
+
+/*-------- botão opçóes de conversores --------- */
+
+select {
+  color:#ffffff;
+  background-color: #111111;  
+  
+  height: 3rem;
+  width: 12rem;
+  margin-top: 5%;  
+  margin-left: 5%; 
+
+  font-size: 20px;  
+  font-family: 'Cabin',monospace;
+
+  align-items: center;
+  text-align-last: center;
+}
+
+option{
+  border-radius: 5px;
+  margin: 25px;
+  text-align-last: center;
+
+  padding: 2rem;  
+}
+
+#opConversores{
+  width: 20rem;
+  margin: 0;
+  border-color: #111111 ;
+}
+
+/*-------- botoes do conversor --------- */
+table{
+  border:0px;
+  border-collapse:collapse;
+  border-spacing:0px;  
+}
+
+td input{
+  width: 5rem;
+  height: 4rem;
+  font-family: 'Cabin',monospace;
+  
+  color: #ffffff;     
+ 
+  font-size: 2.5rem;   
+  font-weight: 600;
+}
+
+td:hover { 
+  transform: scale(1.10); 
+}
+
+.number{
+  background-color: #111111;
+  border-color: #8F3402;
+}
+
+.btn-extra{
+  background-color: #FD5B03;
+  border-color: #8F3402;   
+}
+
+#backspace{
+  width: 5rem;
+  height: 4rem;
+}
+
+.iconify{
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #000;
+}
+
+.p-footer {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.icone {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 5vw;
+    width: 15vw;    
+  } 
+
+  .load-page img{
+    display: none;
+  }
+
+  #menu-icon{
+    width: 10vw;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  #page-title{
+    margin-right: 5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 12vw;
+    margin: 0 0 2rem;
+  }
+
+  .corpoConversor {
+    margin: 0 auto;
+    width: 80vw;
+    height: 120vw;
+  }
+
+  #fundoTela{
+    margin: 0 auto;
+    width: 80vw;
+    height: 50vw;
+  }
+
+  .telas{
+    width: 80vw;
+    height: 10vw;
+    font-size: 7vw;   
+  }
+
+  select{
+    width: 52vw;
+    height: 10vw; 
+    font-size: 7vw;
+  }
+
+  table{
+    border: 0px;
+    border-collapse:collapse;
+    border-spacing:0px;  
+  }
+  
+  td input{
+    width: 20vw;
+    height: 15vw;
+   
+    font-size: 10vw; 
+  }
+
+  #backspace{
+    width: 20vw;
+    height: 15vw;
+  }
+  
+  .iconify{
+    font-size: 10vw;
+  }
+    
+  option{
+    border-radius: 5vw;
+    margin: 2vw;    
+    padding: 2vw;  
+  }
+  
+  #opConversores{
+    width: 80vw; 
+    height: 10vw;     
+  }  
+
+  footer {
+    display: flex;
+    justify-content: space-between; 
+    top:130%;
+  }
+
+  .p-footer {  
+    font-size: 4vw;  
+    margin-left: 2vw;
+    max-width: fit-content;
+  }  
+  
+  .icone {
+    position: absolute; 
+ }
+}
+
+@media (max-width: 768px){
+  #menu-mobile ul {
+    margin-top: 13vw;
+  }
+  select{
+    font-size: 6vw;
+  }
+
+  #page-title{
+    margin-right: 0rem;
+  }  
+}
+
+@media (max-width:480px) { 
+footer {
+  display: flex;
+  justify-content: space-between;  
+  top:110%;
+}
+
+.p-footer {    
+  letter-spacing: 0vw; 
+}  
+  
+.icone {
+    position: absolute;    
+}
+.close-button {
+  font-size: 2rem;
+}
+
+ .icone a{
+  margin: 0;    
+}
+#menu-mobile a {    
+  margin: 1rem 0 2rem;
+    font-size: 2rem;
+}}
