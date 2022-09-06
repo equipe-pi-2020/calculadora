@@ -45,7 +45,7 @@ function mostrarResultado() {
     calcularValorHorasTrabalhadas(valorMes,valorHorasDia,valorSemana),horasJob)
     result.innerText = `Valor do projeto ${nomeJob.value.toUpperCase()} é de:`;
     // Pergunta para adição de Freelance na tabela
-    selectTable.innerHTML = 
+    selectTable.innerHTML = '<br><br>' +
       `Deseja incluir ${nomeJob.value.toUpperCase()} na tabela?`
       + '<div><button id ="addDep" value=" " onclick = "add()" >SIM</button>' 
       + '<button id="notDep" onclick="window.location.reload()">NÃO</button></div>';
