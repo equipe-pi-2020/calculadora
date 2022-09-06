@@ -44,9 +44,8 @@
 /* fim da div de carregamento */
 
 body {
+  width: 100%;
   font-family: 'Advent Pro';
-  min-height: 100vh;
-  max-width: 100vw;
   background-color: #029ef2;
   text-align: center;
 }
@@ -289,26 +288,26 @@ div .table {
 }
 
 table.table {
-  background-color: #F25602;
+  background-color: #029ef2;
   width: 80%;
   height: 12rem;
   text-align: left;
   border-collapse: collapse;
 }
+
 table.table td, table.table th {
   border: 1px solid #fff;
   padding: 3px 4px;
 }
+
 table.table tbody td {
   font-size: 1.25rem;
   color: #ffffff;
   padding-left: 1rem;
 }
+
 table.table thead {
-  background: #F25602;
-  background: -moz-linear-gradient(top, #f58041 0%, #f3671b 66%, #F25602 100%);
-  background: -webkit-linear-gradient(top, #f58041 0%, #f3671b 66%, #F25602 100%);
-  background: linear-gradient(to bottom, #f58041 0%, #f3671b 66%, #F25602 100%);
+  background: #029ef2;
   border-bottom: 2px solid #fff;
 }
 

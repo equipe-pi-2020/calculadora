@@ -27,4 +27,4 @@ https://github.com/equipe-pi-2020/calculadora
 em seguida clique no index.html
 
 Caso não opte por executar localmente, disponibilizamos abaixo um link usando o servidor do GitHub:
-https://equipe-pi-2020.github.io/calculadora/index.html
+https://equipe-pi-2020.github.io/calculadora/
