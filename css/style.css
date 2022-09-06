@@ -35,33 +35,19 @@
 /* Configurações gerais da página */ 
 body {
   min-height: 100vh;
-  background-color: #F25602;
+  background-color: #029ef2;
   font-size: 62.5%;
 }
 
 /* configuração da div principal da home */
 
-div.home {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 90%;
-}
-
-img {
-  position: absolute;
-  width: 400px;
-  left: 14%;
-  top: 0;
-}
-
  h1.page-title {
    position: relative;
    top: 100px;
-   right: 15%;
+   left: 15%;
    font-family: 'Advent Pro', sans-serif;
    font-size: 6rem;
-   text-align: right;
+   text-align: left;
    letter-spacing: 0.3rem;
  }
 
