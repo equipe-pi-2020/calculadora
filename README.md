@@ -1,4 +1,4 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4500&height=150&section=header&text=MINERVA&fontSize=60&fontColor=000000"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=029ef2&height=150&section=header&text=MINERVA&fontSize=60&fontColor=000000"/>
 
 ### Integrantes 
 Antonio Cesar Bispo Miranda Filho<p>

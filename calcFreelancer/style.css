@@ -60,6 +60,7 @@ body {
 .page-title {
   width: 100% 0;
   text-align: right;
+  margin-top: 4rem;
   margin-right: 10rem;
   margin-bottom: 4rem;
   font-size: 6rem;
@@ -100,6 +101,15 @@ fieldset {
 }
 
 h2 {
+  font-family: 'Cabin';
+  font-size: 3rem;
+  text-align: right;
+  margin-top: -4rem;
+  margin-right: 10rem;
+  margin-bottom: 8rem;
+}
+
+h3 {
   font-family: 'Cabin';
   font-size: 1.6rem;
 }
@@ -177,7 +187,8 @@ button:hover {
 }
 
 .resultado-tela {
-  margin-bottom: 8rem;
+  margin-left: 3%;
+  margin-right: auto;
 }
 
 /* Footer */
@@ -220,6 +231,7 @@ table.selectTable {
   height: auto;
   text-align: center;
   border-collapse: collapse;
+  margin-left: 12rem;
 }
 
 table.selectTable td, table.selectTable th {
