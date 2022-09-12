@@ -28,3 +28,7 @@ em seguida clique no index.html
 
 Caso não opte por executar localmente, disponibilizamos abaixo um link usando o servidor do GitHub:
 https://equipe-pi-2020.github.io/calculadora/
+
+### Vídeo Tutorial
+
+[Link](https://github.com/equipe-pi-2020/calculadora/issues/7#issue-1369149525)
