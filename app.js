@@ -11,6 +11,10 @@ var horasJob = document.getElementById("horasJob")
 var valorHoraTrabalho = document.getElementById("valorHoraTrabalho")
 var valorJob = document.getElementById("ValorJob")
 
+function abrirTelaCalculadora() {
+  window.location.href = "calculator.html"
+}
+
 // Calcula valor das horas trabalhadas
 function calcularValorHorasTrabalhadas(valorMes,valorHorasDia,valorSemana ){
   let valorHora = valorMes.value /  valorHorasDia.value / valorSemana.value

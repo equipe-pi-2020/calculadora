@@ -10,7 +10,7 @@
 
 .load-page {
   position: fixed;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 5;
   top: 0;
   right: 0;
@@ -34,10 +34,11 @@
 
 @keyframes loading {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      transform: rotate(360deg);
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -65,12 +66,21 @@ body {
   font-size: 6rem;
 }
 
+.page-title-index {
+  width: 100% 0;
+  text-align: center;
+  margin-top: 4rem;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  font-size: 6rem;
+}
+
 .enunciated {
   text-align: left;
   padding-right: 1.5rem;
   font-weight: bold;
   padding-left: 5rem;
-  background: ##029ef2;
+  background: #029ef2;
 }
 
 .questions {
@@ -80,6 +90,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .question1 {
   width: 100%;
 }
@@ -158,7 +169,7 @@ input {
   font-weight: bold;
   padding-right: 0.5rem;
   color: #029ef2;
-  
+
 }
 
 #tela {
@@ -200,14 +211,27 @@ footer {
 }
 
 .p-footer {
-  position: absolute;
-  top: 50%;
-  left: 7%;
-  transform: translateY(-50%);
+  background-color: #000000;
   color: #fff;
+  padding: 20px;
+  text-align: left;
   font-family: 'Cabin', sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
+  margin-top: 50px;
+  border-top: 1px solid #fff;
+}
+
+.p-footer-index {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  border-top: 1px solid #fff;
 }
 
 .icone {
@@ -233,7 +257,8 @@ table.selectTable {
   margin-left: 12rem;
 }
 
-table.selectTable td, table.selectTable th {
+table.selectTable td,
+table.selectTable th {
   border-bottom: 1px solid #fff;
   padding: 3px 4px;
 }
@@ -266,7 +291,7 @@ table.selectTable thead th {
 }
 
 .buttonExcluir {
-  background:#c21e01;
+  background: #c21e01;
   color: #6e1100;
   text-align: center;
   height: 2rem;
@@ -295,7 +320,8 @@ table.table {
   border-collapse: collapse;
 }
 
-table.table td, table.table th {
+table.table td,
+table.table th {
   border: 1px solid #fff;
   padding: 3px 4px;
 }
@@ -318,6 +344,7 @@ table.table thead th {
   text-align: center;
   border-left: 2px solid #fff;
 }
+
 table.table thead th:first-child {
   border-left: none;
 }
@@ -343,11 +370,11 @@ th:nth-child(4) {
     width: 15vw;
   }
 
-  .load-page img{
+  .load-page img {
     display: none;
   }
 
-  #menu-icon{
+  #menu-icon {
     width: 10vw;
   }
 
@@ -362,7 +389,7 @@ th:nth-child(4) {
     justify-content: center;
   }
 
-  #menu-mobile{
+  #menu-mobile {
     overflow: hidden;
   }
 
@@ -464,5 +491,3 @@ th:nth-child(4) {
     font-size: 0.7rem;
   }
 }
-
-
